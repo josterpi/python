@@ -1,0 +1,28 @@
+
+A program to check email via IMAP and filter into different folders.
+Thunderbird type filters. 
+My filters are in .thunderbird/xhf0zpfk.default/ImapMail/mail.jrcorps.com
+parse log file. 
+Filter class model
+
+Another component: number of new messages, authors and subjects - to be put in conky
+
+Test filter:
+name="test filter"
+enabled="yes"
+type="1"
+action="Move to folder"
+actionValue="imap://jeremy%40jrcorps.com@mail.jrcorps.com/INBOX/family"
+action="Copy to folder"
+actionValue="imap://jeremy%40jrcorps.com@mail.jrcorps.com/INBOX/business"
+action="Change priority"
+actionValue="Highest"
+action="Label"
+actionValue="1"
+action="JunkScore"
+actionValue="100"
+action="Mark read"
+action="Mark flagged"
+action="Delete"
+condition="AND (subject,contains,asdfasdfsadfasdfasdf) AND (from,doesn't contain ,nick) AND (date,is,01-Mar-2006) AND (priority,is higher than,Lowest) AND (statu s,is,forwarded) AND (to or cc,contains,asdfasfd)"
+
